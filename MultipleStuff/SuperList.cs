@@ -72,8 +72,8 @@ namespace MultipleStuff
 
         public struct MinMaxStruct
         {
-            double Min {get;}
-            double Max {get;}
+            public double Min {get;}
+            public double Max {get;}
 
             public MinMaxStruct(double min, double max)
             {
