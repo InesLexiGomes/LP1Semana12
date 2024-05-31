@@ -32,5 +32,16 @@ namespace MultipleStuff
             return max;
         }
         
+        /// <summary>
+        /// Uses out to return both values
+        /// </summary>
+        /// <param name="min"> returns the minimum amount </param>
+        /// <param name="max"> returns the maximum amount </param>
+        public void GetMinMax1(out double min, out double max)
+        {
+            min = GetMin();
+            max = GetMax();
+        }
+
     }
 }
