@@ -43,5 +43,22 @@ namespace MultipleStuff
             max = GetMax();
         }
 
+        /// <summary>
+        /// Uses tuple
+        /// </summary>
+        /// <returns> Min and max values respectively </returns>
+        public (double, double) GetMinMax3()
+        {
+            return(GetMin(), GetMax());
+        }
+
+        /// <summary>
+        /// uses named tuple
+        /// </summary>
+        /// <returns> named min and max values </returns>
+        public (double min, double max) GetMinMax4()
+        {
+            return(GetMin(), GetMax());
+        }
     }
 }
