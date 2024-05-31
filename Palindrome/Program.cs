@@ -8,7 +8,7 @@ namespace Palindrome
         {
             foreach (string arg in args)
             {
-                Console.WriteLine($"{arg} -> {IsPalindrome(arg)}")
+                Console.WriteLine($"{arg} -> {IsPalindrome(arg)}");
             }
         }
 
