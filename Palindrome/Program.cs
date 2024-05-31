@@ -6,15 +6,20 @@ namespace Palindrome
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            foreach (string arg in args)
+            {
+                Console.WriteLine($"{arg} -> {IsPalindrome(arg)}")
+            }
         }
 
-        bool IsPalindrome(string s)
+        static bool IsPalindrome(string s)
         {
             bool PalindromeChecker()
             {
+                // Ignores Capitalization
+                s = s.ToLower();
                 // Convert to array to be reversed
-                Char[] chars = s.ToCharArray();
+                char[] chars = s.ToCharArray();
 
 
                 // Create new string to be reversed
