@@ -18,5 +18,19 @@ namespace MultipleStuff
             }
             return min;
         }
+        /// <summary>
+        /// Determines which is the maximum
+        /// </summary>
+        /// <returns> maximum value </returns>
+        double GetMax()
+        {
+            double max = this[0];
+            foreach (double d in this)
+            {
+                if (d > max) max = d;
+            }
+            return max;
+        }
+        
     }
 }
