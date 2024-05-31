@@ -44,6 +44,15 @@ namespace MultipleStuff
         }
 
         /// <summary>
+        /// Uses Structs
+        /// </summary>
+        /// <returns> Struct with min and max values </returns>
+        public MinMaxStruct GetMinMax2()
+        {
+            return new MinMaxStruct(GetMin(), GetMax());
+        }
+
+        /// <summary>
         /// Uses tuple
         /// </summary>
         /// <returns> Min and max values respectively </returns>
@@ -59,6 +68,18 @@ namespace MultipleStuff
         public (double min, double max) GetMinMax4()
         {
             return(GetMin(), GetMax());
+        }
+
+        public struct MinMaxStruct
+        {
+            double Min {get;}
+            double Max {get;}
+
+            public MinMaxStruct(double min, double max)
+            {
+                Min = min;
+                Max = max;
+            }
         }
     }
 }
